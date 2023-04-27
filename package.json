@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "start:css": "tailwindcss -o src/tailwind.css --watch",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
