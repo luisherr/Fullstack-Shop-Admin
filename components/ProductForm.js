@@ -34,11 +34,15 @@ export default function ProductForm({
       for (const file of files) {
         data.append('file', file)
       }
-      fetch('/api/upload', {
-        method: 'POST' ,
-        body: data,
+      const res = await fetch('/api/upload', {
+        method: 'POST',
+        body: data
       })
       console.log(res);
+      // fetch('/api/upload', {
+      //   method: 'POST' ,
+      //   body: data,
+      // })
     }
   }
   return (
